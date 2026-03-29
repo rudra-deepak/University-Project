@@ -8,53 +8,60 @@
        <link rel="stylesheet" href="css.css">
 </head>
 <body>
-    <h1>University Registration Form</h1>
+    <img src="../FORM/Rudra University logo design.png" 
+    width="200"
+    height="200"
+    id="image1">
+   
+    <h1 id="topic">University Registration Form</h1>
+    <br><br>
 
-<p>Please fill out the form below to register:</p>
+<p id="line1"> <span class="way">Please fill out the form below to register:</span></p>
 <form>
     <hr>
 
-    <h2>Personal Details
-    </h2>
-        <label for="FirstName" ID="FIRSTNAME1">First Name:</label>
+    <h2 class="sub-title">Personal Details
+    </h2><br><br>
+        <label for="FirstName" ID="FIRSTNAME1"
+        class="info">First Name:</label>
         <input type="text"  name="FirstName" id="FirstName" placeholder="Enter your first name" required>
         <br><br>
 
-      <label for="LastName" ID="LASTNAME1">last Name:</label>
+      <label for="LastName" class="info" ID="LASTNAME1">last Name:</label>
         <input type="text"  name="LastName" id="LastName" placeholder="Enter your last name" required>
         <br><br>
 
-        <label for="dateofbirth" ID="DATEOFBIRTH1">Date of Birth:</label>
+        <label for="dateofbirth" class="info" ID="DATEOFBIRTH1">Date of Birth:</label>
         <input type="date"  name="dateofbirth" id="dateofbirth"  >
         <br><br>
 
-        <p><h3>Gender:</h3></p>
-        <label for="male" >  male:</label>
+        <p><h3 class="sub-title">Gender:</h3></p>
+        <label for="male" class="info">  male:</label>
         <input type="radio"  name="gender" id="male" required >
         <br>
-         <label for="female" >female:</label>
+         <label for="female" class="info">female:</label>
         <input type="radio"  name="gender" id="female"  required >
         <br>
-        <label for="other" >other:</label>
+        <label for="other" class="info">other:</label>
         <input type="radio"  name="gender" id="other"    required >
         <br><br>
 
-        <p> <h2>Upload your photo:</h2></p>
+        <p ><h2 class="sub-title">Upload your photo:</h2></p>
         <input type="file" name="photo" id="photo" >
 
         <hr>
-        <h2>Contact Information</h2>
-        <label for="email">Email:</label>
+        <h2 class="sub-title">Contact Information</h2>
+        <label for="email" class="info">Email:</label>
         <input type="email" name="email" id="email" placeholder="Enter your email" required>
         <br><br>    
-        <label for="phone">Phone Number:</label>
+        <label for="phone" class="info">Phone Number:</label>
         <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
         <br><br>
-        <label for="address">Mailing Address:</label>
+        <label for="address" class="info">Mailing Address:</label>
         <textarea name="address" id="address" placeholder="Enter your mailing address"></textarea>
             <hr>
-            <h2>Academic Information</h2>
-            <p>select your course:</p>
+            <h2 class="sub-title">Academic Information</h2>
+            <p class="info">select your course:</p>
         
         
             <select name="course" id="course" required  >
@@ -64,37 +71,37 @@
             
             </select> <br><br>
 
-           <h3>Extra-curricular Activity:</h3>
+           <h3 class="sub-title">Extra-curricular Activity:</h3>
             
-           <label for="sports">Sports:</label>
+           <label for="sports" class="info">Sports:</label>
            <input type="checkbox" name="sports" id="sports" >  <br>
 
 
-             <label for="music and arts">Music and Arts:</label>
+             <label for="music and arts" class="info">Music and Arts:</label>
            <input type="checkbox" name="music and arts" id="musicarts" ><br>
 
 
-            <label for="Technology Club">Technology Club:</label>
+            <label for="Technology Club" class="info">Technology Club:</label>
            <input type="checkbox" name="Technology Club" id="TechnologyClub" ><br>
 
 
-            <label for="Volunteer">Volunteer:</label>
+            <label for="Volunteer" class="info">Volunteer:</label>
            <input type="checkbox" name="Volunteer" id="Volunteer" ><br>
 
         <hr>
-        <h2>Create your account</h2>
-        <label for="Create your password">Create your password:</label>
+        <h2 class="sub-title">Create your account</h2>
+        <label for="Create your password" class="info">Create your password:</label>
         <input type="password" name="password" id="password" placeholder="Choose a password" required>
         <br><br>    
 
-        <label for="Security question">Security Question:</label>
+        <label for="Security question" class="info">Security Question:</label>
         <select name="Security question" id="Securityquestion" required>
             <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
             <option value="What was the name of your first pet?">What was the name of your first pet?</option>
             <option value="What is your favorite book?">What is your favorite book?</option>
            </select>
         <br><br>
-        <label for="Security answer">Security Answer:</label>
+        <label for="Security answer" class="info">Security Answer:</label>
         <input type="text" name="Security answer" id="Security answer" placeholder="Enter your security answer" required    >
         <br><br>
 
@@ -121,99 +128,57 @@
 
 
 
+
+
+
 css
 
-
-/* 
-#FIRSTNAME1 {
-    color: rgb(0, 255, 110);
-}
-#LASTNAME1 {
-    color: rgb(0, 255, 110);
-}
-#DATEOFBIRTH1 {
-    color: rgb(0, 255, 110);
-}
-
-
-
-  */
-  /* Reset some default spacing */
 body {
-    font-family: serif;
-    background: linear-gradient(to right, #74ebd5, #ACB6E5);
-    margin: 0;
-    padding: 0;
+    background: linear-gradient(rgba(2, 227, 252, 0.4), rgba(246, 12, 12, 0.4)),
+                url("../FORM/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-/* Main container style */
-form {
-    background: white;
-    width: 400px;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+   #image1 {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+   
+   #topic {
+    color: rgb(255, 8, 0);
+    background-color: rgba(246, 165, 4, 0.427);
+    border: 3px solid rgb(125, 4, 246);
 }
 
-/* Headings */
-h1 {
-    text-align: center;
-    color: #333;
+
+    #line1 {
+  color: rgb(0, 0, 0);
+  background-color: rgba(8, 246, 4, 0.427);
+  border: 2px solid rgb(4, 246, 4);
+
+  .text {
+  position: relative;
+  left: 10px;
+         }
+}
+  
+    
+
+ .info {
+    color: rgb(7, 247, 23);
 }
 
-h2 {
-    color: #555;
+.sub-title {
+    color: rgb(255, 0, 0);
+    background-color: rgba(242, 255, 0, 0.599);
+    border: 2px solid rgb(60, 4, 246);
+    
 }
 
-/* Labels */
-label {
-    font-weight: bold;
-}
-
-/* Inputs, select, textarea */
-input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-/* Focus effect */
-input:focus, textarea:focus, select:focus {
-    border-color: #007BFF;
-    outline: none;
-}
-
-/* Buttons */
-button {
-    padding: 10px;
-    margin-top: 10px;
-    width: 48%;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Submit button */
-button[type="submit"] {
-    background-color: #28a745;
-    color: white;
-}
-
-/* Reset button */
-button[type="reset"] {
-    background-color: #dc3545;
-    color: white;
-}
-
-/* Button hover */
-button:hover {
-    opacity: 0.9;
-}
-
-/* Spacing between sections */
-hr {
-    margin: 20px 0;
+#topic,#line1,#topic,.sub-title {
+    /* text-align: center; */
+    display: inline-block;
 }
