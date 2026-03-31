@@ -7,11 +7,15 @@
     </title>
        <link rel="stylesheet" href="css.css">
 </head>
+
 <body>
     <img src="../FORM/Rudra University logo design.png" 
     width="200"
     height="200"
     id="image1">
+    <hr >
+
+    <div class="container">
    
     <h1 id="topic">University Registration Form</h1>
     <br><br>
@@ -113,6 +117,7 @@
  <hr>
  <button type="submit">Register</button>
  <button type="reset">Reset</button>
+ </div>
 
 </form >
 
@@ -137,23 +142,41 @@
 
 
 
-
 css
 
+   #image1 {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);  /* 🔥 PERFECT CENTER */
+
+    width: 250px;
+    border-radius: 50%;
+}
+   
+
+/* body {
+    background: linear-gradient(rgba(2, 227, 252, 0.4), rgba(246, 12, 12, 0.4)),
+                url("../FORM/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: center;
+    margin: auto;
+    margin-top: 150px;
+} */
 body {
     background: linear-gradient(rgba(2, 227, 252, 0.4), rgba(246, 12, 12, 0.4)),
                 url("../FORM/bg.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+    margin: 0;
+    padding-top: 180px;   /* 🔥 IMPORTANT (space for logo) */
 }
 
-   #image1 {
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;}
-   
+
    #topic {
     color: rgb(255, 8, 0);
     background-color: rgba(246, 165, 4, 0.427);
@@ -165,12 +188,13 @@ body {
   color: rgb(0, 0, 0);
   background-color: rgba(8, 246, 4, 0.427);
   border: 2px solid rgb(4, 246, 4);
+}
 
   .text {
   position: relative;
   left: 10px;
          }
-}
+
   
     
 
@@ -189,3 +213,17 @@ body {
     /* text-align: center; */
     display: inline-block;
 }
+
+
+.container{
+     width: 60%;
+    margin: auto;
+
+}
+/* hr {
+    width: 100vw;          /* full screen width */
+    margin-left: -50vw;
+    left: 50%;
+    position: relative;
+    background-color: #000000;
+} */
