@@ -28,11 +28,18 @@
    
     <h1 id="topic">University Registration Form</h1>
     <br><br>
-    <P style="font-size: 18px; font-weight: bold; color: #060000;">
-         If you have already registered, please click here.</P>
-         <!-- <a href="login.html" >login</a>  -->
-        <button type="login" style="height: 35px; width: 50px; color: #ce0808; border-color: rgb(249, 141, 0); ">login</button>
-        <br><br>
+   
+<p style="font-size: 18px; font-weight: bold; color: #060000;">
+If you have already registered, please click here.
+</p>
+
+<button type="button" 
+        onclick="window.location.href='login.html'"
+        style="height: 35px; width: 60px; color: #ce0808; border-color: rgb(249, 141, 0);">
+    Login
+</button>
+<br><br>
+
 <p id="line1"> <span class="way">Please fill out the form below to register:</span></p>
 <form>
     <hr>
@@ -56,7 +63,7 @@
         <label for="male" class="info">  male:</label>
         <input type="radio"  name="gender" id="male" required >
         <br>
-         <label for="female" class="info">female:</label>
+        <label for="female" class="info">female:</label>
         <input type="radio"  name="gender" id="female"  required >
         <br>
         <label for="other" class="info">other:</label>
@@ -124,12 +131,12 @@
 
 
 <input type="checkbox" name="terms" id="terms" required>
-<label for="terms">I agree to the terms and conditions:</label>
+<label for="terms" style="color: aquamarine; font-weight: bold;">I agree to the terms and conditions:</label>
   <br><br>
 
  <hr>
- <button type="submit">Register</button>
- <button type="reset">Reset</button>
+ <button type="submit"  style="height: 35px; width: 80px; color: #ce0808; border-color: rgb(249, 141, 0);">Register</button>
+ <button type="reset" style="height: 35px; width: 80px; color: #ce0808; border-color: rgb(249, 141, 0);">Reset</button>
  
  </div>
 
@@ -138,119 +145,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-   #image1 {
-    position: sticky;
-    top: 0px;
-    display: block; 
-    left: 50%;
-    transform: translateX(-50%);  /* 🔥 PERFECT CENTER */
-
-    width: 250px;
-    border-radius: 50%;
-      
-}
-   
- 
-
-body {
-    background: linear-gradient(rgba(2, 227, 252, 0.4), rgba(246, 12, 12, 0.4)),
-                url("../FORM/bg.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: center;
-    margin: auto;
-    margin-top: 0px;
-}
-
-#Uname {
-    /* color: rgb(255, 0, 0); */
-    /* background-color: rgba(2, 16, 73, 0.427); */
-    /* border: 3px solid rgb(125, 4, 246); */
-    margin: auto;
-font-size: 70px;
-text-align: center;}
-
-#uaddress {
-    color: rgb(0, 0, 0);
-    /* background-color: rgba(2, 16, 73, 0.427); */
-    /* border: 3px solid rgb(125, 4, 246); */
-    margin: auto;
-font-size: 20px;
-text-align: center;}
-
-.university {
-    color: rgb(255, 0, 0);
-    /* background-color: rgba(2, 16, 73, 0.427); */
-    border: 3px solid rgb(125, 4, 246);
-
-
-}
-
-   #topic {
-    color: rgb(255, 255, 255);
-    /* background-color: rgba(246, 165, 4, 0.427); */
-    border: 3px solid rgb(125, 4, 246);
-     font-size: 40px;   
-}
-    
-
-    #line1 {
-  color: rgb(0, 0, 0);
-  background-color: rgba(8, 246, 4, 0.427);
-  border: 2px solid rgb(4, 246, 4);
-}
-
-  /* .text {
-  position: relative;
-  left: 10px;
-         } */
-
-  
-
-
- .info {
-    color: rgb(255, 255, 255);
-}
-
-.sub-title {
-    color: rgb(255, 0, 0);
-    background-color: rgba(242, 255, 0, 0.599);
-    border: 2px solid rgb(60, 4, 246);
-    
-}
-
- #topic,#line1,#topic,.sub-title {
-    /* text-align: center; */
-    display: inline-block;
-} 
-
-#line1{
-    font-size: 25px;
-}   
-
-.container{
-    width: 60%;
-    margin: 10px auto;
-    margin-top: 20px; 
-}
-
-/* #topic{
-    margin: 20px;;
-} */
-
-/* #unique{
-    margin-top: 0px;
-} */
-
-
