@@ -9,17 +9,30 @@
 </head>
 
 <body>
-    <img src="../FORM/Rudra University logo design.png" 
-    width="200"
-    height="200"
-    id="image1">
-    <hr >
+    <body>
+      
+<div >
+    <img src="../FORM/Rudra University logo design.png" id="image1">
+   
+       
+</div>
+ <p id="Uname" >Rudra University </p>
+        <p id="uaddress">Knowledge park II, Greater Noida,
+             NCR, Uttar Pradesh, India-- Phone: +91 12345 67890</p>
+  
+  
+                <br><hr id="unique">
+`
 
     <div class="container">
    
     <h1 id="topic">University Registration Form</h1>
     <br><br>
-
+    <P style="font-size: 18px; font-weight: bold; color: #060000;">
+         If you have already registered, please click here.</P>
+         <!-- <a href="login.html" >login</a>  -->
+        <button type="login" style="height: 35px; width: 50px; color: #ce0808; border-color: rgb(249, 141, 0); ">login</button>
+        <br><br>
 <p id="line1"> <span class="way">Please fill out the form below to register:</span></p>
 <form>
     <hr>
@@ -54,7 +67,7 @@
         <input type="file" name="photo" id="photo" >
 
         <hr>
-        <h2 class="sub-title">Contact Information</h2>
+        <h2 class="sub-title">Contact Information</h2> <br><br>
         <label for="email" class="info">Email:</label>
         <input type="email" name="email" id="email" placeholder="Enter your email" required>
         <br><br>    
@@ -75,7 +88,7 @@
             
             </select> <br><br>
 
-           <h3 class="sub-title">Extra-curricular Activity:</h3>
+           <h3 class="sub-title">Extra-curricular Activity:</h3> <br>
             
            <label for="sports" class="info">Sports:</label>
            <input type="checkbox" name="sports" id="sports" >  <br>
@@ -93,7 +106,7 @@
            <input type="checkbox" name="Volunteer" id="Volunteer" ><br>
 
         <hr>
-        <h2 class="sub-title">Create your account</h2>
+        <h2 class="sub-title">Create your account</h2> <br><br>
         <label for="Create your password" class="info">Create your password:</label>
         <input type="password" name="password" id="password" placeholder="Choose a password" required>
         <br><br>    
@@ -117,6 +130,7 @@
  <hr>
  <button type="submit">Register</button>
  <button type="reset">Reset</button>
+ 
  </div>
 
 </form >
@@ -134,23 +148,21 @@
 
 
 
-
-
-
-css
-
    #image1 {
-    position: fixed;
-    top: 10px;
+    position: sticky;
+    top: 0px;
+    display: block; 
     left: 50%;
     transform: translateX(-50%);  /* 🔥 PERFECT CENTER */
 
     width: 250px;
     border-radius: 50%;
+      
 }
    
+ 
 
-/* body {
+body {
     background: linear-gradient(rgba(2, 227, 252, 0.4), rgba(246, 12, 12, 0.4)),
                 url("../FORM/bg.png");
     background-size: cover;
@@ -158,26 +170,40 @@ css
     background-attachment: fixed;
     position: center;
     margin: auto;
-    margin-top: 150px;
-} */
-body {
-    background: linear-gradient(rgba(2, 227, 252, 0.4), rgba(246, 12, 12, 0.4)),
-                url("../FORM/bg.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-    margin: 0;
-    padding-top: 180px;   /* 🔥 IMPORTANT (space for logo) */
+    margin-top: 0px;
 }
 
+#Uname {
+    /* color: rgb(255, 0, 0); */
+    /* background-color: rgba(2, 16, 73, 0.427); */
+    /* border: 3px solid rgb(125, 4, 246); */
+    margin: auto;
+font-size: 70px;
+text-align: center;}
+
+#uaddress {
+    color: rgb(0, 0, 0);
+    /* background-color: rgba(2, 16, 73, 0.427); */
+    /* border: 3px solid rgb(125, 4, 246); */
+    margin: auto;
+font-size: 20px;
+text-align: center;}
+
+.university {
+    color: rgb(255, 0, 0);
+    /* background-color: rgba(2, 16, 73, 0.427); */
+    border: 3px solid rgb(125, 4, 246);
+
+
+}
 
    #topic {
-    color: rgb(255, 8, 0);
-    background-color: rgba(246, 165, 4, 0.427);
+    color: rgb(255, 255, 255);
+    /* background-color: rgba(246, 165, 4, 0.427); */
     border: 3px solid rgb(125, 4, 246);
+     font-size: 40px;   
 }
-
+    
 
     #line1 {
   color: rgb(0, 0, 0);
@@ -185,16 +211,16 @@ body {
   border: 2px solid rgb(4, 246, 4);
 }
 
-  .text {
+  /* .text {
   position: relative;
   left: 10px;
-         }
+         } */
 
   
-    
+
 
  .info {
-    color: rgb(7, 247, 23);
+    color: rgb(255, 255, 255);
 }
 
 .sub-title {
@@ -204,21 +230,27 @@ body {
     
 }
 
-#topic,#line1,#topic,.sub-title {
+ #topic,#line1,#topic,.sub-title {
     /* text-align: center; */
     display: inline-block;
-}
+} 
 
+#line1{
+    font-size: 25px;
+}   
 
 .container{
-     width: 60%;
-    margin: auto;
-
+    width: 60%;
+    margin: 10px auto;
+    margin-top: 20px; 
 }
-/* hr {
-    width: 100vw;          /* full screen width */
-    margin-left: -50vw;
-    left: 50%;
-    position: relative;
-    background-color: #000000;
+
+/* #topic{
+    margin: 20px;;
 } */
+
+/* #unique{
+    margin-top: 0px;
+} */
+
+
