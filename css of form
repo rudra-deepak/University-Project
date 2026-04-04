@@ -1,0 +1,119 @@
+   #image1 {
+    position: sticky;
+    top: 0px;
+    display: block; 
+    left: 50%;
+    transform: translateX(-50%);  /* 🔥 PERFECT CENTER */
+
+    width: 250px;
+    border-radius: 50%;
+      
+}
+   
+ 
+
+body {
+    background: linear-gradient(rgba(0, 229, 254, 0.4), rgba(20, 28, 46, 0.4)),
+                url("../FORM/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: center;
+    margin: auto;
+    margin-top: 0px;
+}
+
+
+/* for next update 
+body {background: linear-gradient(rgba(0, 229, 254, 0.4), rgba(20, 28, 46, 0.4)),
+                url("../FORM/loginbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: center;
+    margin: auto;
+    margin-top: 0px;} */
+
+
+    
+#Uname {
+    /* color: rgb(255, 0, 0); */
+    /* background-color: rgba(2, 16, 73, 0.427); */
+    /* border: 3px solid rgb(125, 4, 246); */
+    margin: auto;
+font-size: 70px;
+text-align: center;}
+
+#uaddress {
+    color: rgb(0, 0, 0);
+    /* background-color: rgba(2, 16, 73, 0.427); */
+    /* border: 3px solid rgb(125, 4, 246); */
+    margin: auto;
+font-size: 20px;
+text-align: center;}
+
+.university {
+    color: rgb(255, 0, 0);
+    /* background-color: rgba(2, 16, 73, 0.427); */
+    border: 3px solid rgb(125, 4, 246);
+
+
+}
+
+   #topic {
+    color: rgb(255, 255, 255);
+    /* background-color: rgba(246, 165, 4, 0.427); */
+    border: 3px solid rgb(125, 4, 246);
+     font-size: 40px;   
+}
+    
+
+    #line1 {
+  color: rgb(0, 0, 0);
+  background-color: rgba(8, 246, 4, 0.427);
+  border: 2px solid rgb(4, 246, 4);
+}
+
+  /* .text {
+  position: relative;
+  left: 10px;
+         } */
+
+  
+
+
+ .info {
+    color: rgb(255, 255, 255);
+}
+
+.sub-title {
+    color: rgb(255, 0, 0);
+    background-color: rgba(242, 255, 0, 0.599);
+    border: 2px solid rgb(60, 4, 246);
+    
+}
+
+ #topic,#line1,#topic,.sub-title {
+    /* text-align: center; */
+    display: inline-block;
+} 
+
+#line1{
+    font-size: 25px;
+}   
+
+.container{
+    width: 60%;
+    margin: 10px auto;
+    margin-top: 20px; 
+}
+
+/* #topic{
+    margin: 20px;;
+} */
+
+/* #unique{
+    margin-top: 0px;
+} */
+
+
